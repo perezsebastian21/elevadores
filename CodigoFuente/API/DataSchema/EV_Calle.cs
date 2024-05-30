@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace rsAPIElevador.DataSchema
+namespace API.DataSchema
 {
     public class EV_Calle
     {

@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 
-namespace rsAPIElevador.DataSchema {
+namespace API.DataSchema {
 	public class EV_Conservadora {
         public int IdConservadora { get; set; }
         public int? IdSeguro { get; set; }

@@ -1,6 +1,6 @@
-﻿using  rsAPIElevador.DataSchema;
-using  rsAPIElevador.Services;
-using  rsAPIElevador.Utility;
+﻿using  API.DataSchema;
+using  API.Services;
+using  API.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -13,7 +13,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rsAPIElevador.Controllers
+namespace API.Controllers
 {
     [ApiController]
     [AllowAnonymous]

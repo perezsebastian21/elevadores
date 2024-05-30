@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace rsAPIElevador.Migrations
+namespace API.Migrations
 {
     /// <inheritdoc />
     public partial class veintiuno : Migration

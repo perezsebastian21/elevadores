@@ -1,11 +1,11 @@
-﻿using  rsAPIElevador.DataSchema;
+﻿using  API.DataSchema;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace rsAPIElevador.Services
+namespace API.Services
 {
     public interface ICRUDService<T>
     {

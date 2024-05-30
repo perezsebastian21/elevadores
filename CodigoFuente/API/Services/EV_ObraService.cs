@@ -1,8 +1,8 @@
 ﻿using Castle.Core.Configuration;
 using Microsoft.EntityFrameworkCore;
-using rsAPIElevador.DataSchema;
-using rsAPIElevador.DataSchema.DTO;
-using rsAPIElevador.Repositories;
+using API.DataSchema;
+using API.DataSchema.DTO;
+using API.Repositories;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 
-namespace rsAPIElevador.Services
+namespace API.Services
 {
     public class EV_ObraService : BaseCRUDService<EV_Obra>, IEV_ObraService
     {

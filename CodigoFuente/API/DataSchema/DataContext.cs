@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using rsAPIElevador.DataSchema.ModelConfiguration;
+using API.DataSchema.ModelConfiguration;
 
-namespace rsAPIElevador.DataSchema
+namespace API.DataSchema
 {
     public class DataContext : DbContext
     {

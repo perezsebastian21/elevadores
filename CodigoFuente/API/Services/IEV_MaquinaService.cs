@@ -1,9 +1,9 @@
-﻿using rsAPIElevador.DataSchema;
-using rsAPIElevador.DataSchema.DTO;
+﻿using API.DataSchema;
+using API.DataSchema.DTO;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace rsAPIElevador.Services
+namespace API.Services
 {
     public interface IEV_MaquinaService : ICRUDService<EV_Maquina>
     {

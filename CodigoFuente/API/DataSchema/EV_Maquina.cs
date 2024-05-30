@@ -12,7 +12,7 @@ using System.IO;
 
 
 
-namespace rsAPIElevador.DataSchema {
+namespace API.DataSchema {
 	public class EV_Maquina {
 
         public int IdMaquina { get; set; }
@@ -49,4 +49,4 @@ namespace rsAPIElevador.DataSchema {
 
 	}//end EV_Maquina
 
-}//end namespace rsAPIElevador.DataSchema
+}//end namespace API.DataSchema

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.Extensions.Hosting;
 using System.Reflection.Emit;
 
-namespace rsAPIElevador.DataSchema
+namespace API.DataSchema
 {
     public class EV_MaquinaConfiguration : IEntityTypeConfiguration<EV_Maquina>
     {

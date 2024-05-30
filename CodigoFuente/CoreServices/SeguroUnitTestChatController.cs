@@ -5,9 +5,9 @@ using FluentAssertions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using rsAPIElevador.Controllers;
-using rsAPIElevador.DataSchema;
-using rsAPIElevador.Services;
+using API.Controllers;
+using API.DataSchema;
+using API.Services;
 using Xunit;
 
 namespace CoreServices.Test { 

@@ -10,7 +10,7 @@ using System.Text;
 using System.IO;
 using Microsoft.Extensions.Hosting;
 
-namespace rsAPIElevador.DataSchema {
+namespace API.DataSchema {
 	public class EV_Administracion {
         public int IdAdministracion { get; set; }
         public string Nombre { get; set; }

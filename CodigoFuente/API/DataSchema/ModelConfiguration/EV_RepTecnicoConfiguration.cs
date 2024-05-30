@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace rsAPIElevador.DataSchema
+namespace API.DataSchema
 {
     public class EV_RepTecnicoConfiguration : IEntityTypeConfiguration<EV_RepTecnico>
     {

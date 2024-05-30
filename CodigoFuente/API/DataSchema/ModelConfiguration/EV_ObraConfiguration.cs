@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.Extensions.Hosting;
 
-namespace rsAPIElevador.DataSchema
+namespace API.DataSchema
 {
     public class EV_ObraConfiguration : IEntityTypeConfiguration<EV_Obra>
     {

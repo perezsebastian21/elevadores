@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using rsAPIElevador.DataSchema;
+using API.DataSchema;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Net;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
-namespace rsAPIElevador.Repositories
+namespace API.Repositories
 {
     public class EV_MaquinaRepository : BaseRepository<EV_Maquina>, IEV_MaquinaRepository
     {

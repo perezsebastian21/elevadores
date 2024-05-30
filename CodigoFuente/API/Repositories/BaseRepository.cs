@@ -1,4 +1,4 @@
-﻿using  rsAPIElevador.DataSchema;
+﻿using  API.DataSchema;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using IdentityModel;
 using rsFoodtrucks.Exceptions;
 
-namespace rsAPIElevador.Repositories
+namespace API.Repositories
 {
     public class BaseRepository<T> : IRepository<T>
         where T : class

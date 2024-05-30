@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using rsAPIElevador.DataSchema;
+using API.DataSchema;
 
 #nullable disable
 
-namespace rsAPIElevador.Migrations
+namespace API.Migrations
 {
     [DbContext(typeof(DataContext))]
     [Migration("20240201181638_veinticuatro")]
@@ -55,7 +55,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_ConservadoraEV_RepTecnico");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EJ_Usuario", b =>
+            modelBuilder.Entity("API.DataSchema.EJ_Usuario", b =>
                 {
                     b.Property<int>("IdUsuario")
                         .ValueGeneratedOnAdd()
@@ -78,7 +78,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EJ_Usuarios");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Administracion", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Administracion", b =>
                 {
                     b.Property<int>("IdAdministracion")
                         .ValueGeneratedOnAdd()
@@ -119,7 +119,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_Administracion");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Calle", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Calle", b =>
                 {
                     b.Property<int>("IdCalle")
                         .ValueGeneratedOnAdd()
@@ -136,7 +136,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_Calle");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Conservadora", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Conservadora", b =>
                 {
                     b.Property<int>("IdConservadora")
                         .ValueGeneratedOnAdd()
@@ -191,7 +191,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_Conservadora");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Maquina", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Maquina", b =>
                 {
                     b.Property<int>("IdMaquina")
                         .ValueGeneratedOnAdd()
@@ -268,7 +268,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_Maquina");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Obra", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Obra", b =>
                 {
                     b.Property<int>("IdObra")
                         .ValueGeneratedOnAdd()
@@ -333,7 +333,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_Obra");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Persona", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Persona", b =>
                 {
                     b.Property<int>("IdPersona")
                         .ValueGeneratedOnAdd()
@@ -364,7 +364,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_Persona");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_RepTecnico", b =>
+            modelBuilder.Entity("API.DataSchema.EV_RepTecnico", b =>
                 {
                     b.Property<int>("IdRepTecnico")
                         .ValueGeneratedOnAdd()
@@ -412,7 +412,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_RepTecnico");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Seguro", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Seguro", b =>
                 {
                     b.Property<int>("IdSeguro")
                         .ValueGeneratedOnAdd()
@@ -444,7 +444,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_Seguro");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_TipoEquipamiento", b =>
+            modelBuilder.Entity("API.DataSchema.EV_TipoEquipamiento", b =>
                 {
                     b.Property<int>("IdTipoEquipamiento")
                         .ValueGeneratedOnAdd()
@@ -467,7 +467,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_TipoEquipamiento");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_TipoObra", b =>
+            modelBuilder.Entity("API.DataSchema.EV_TipoObra", b =>
                 {
                     b.Property<int>("IdTipoObra")
                         .ValueGeneratedOnAdd()
@@ -490,7 +490,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_TipoObra");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Velocidades", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Velocidades", b =>
                 {
                     b.Property<int>("IdVelocidad")
                         .ValueGeneratedOnAdd()
@@ -515,13 +515,13 @@ namespace rsAPIElevador.Migrations
 
             modelBuilder.Entity("EV_AdministracionEV_Conservadora", b =>
                 {
-                    b.HasOne("rsAPIElevador.DataSchema.EV_Administracion", null)
+                    b.HasOne("API.DataSchema.EV_Administracion", null)
                         .WithMany()
                         .HasForeignKey("EV_AdministracionIdAdministracion")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("rsAPIElevador.DataSchema.EV_Conservadora", null)
+                    b.HasOne("API.DataSchema.EV_Conservadora", null)
                         .WithMany()
                         .HasForeignKey("EV_ConservadoraIdConservadora")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -530,47 +530,47 @@ namespace rsAPIElevador.Migrations
 
             modelBuilder.Entity("EV_ConservadoraEV_RepTecnico", b =>
                 {
-                    b.HasOne("rsAPIElevador.DataSchema.EV_Conservadora", null)
+                    b.HasOne("API.DataSchema.EV_Conservadora", null)
                         .WithMany()
                         .HasForeignKey("EV_ConservadoraIdConservadora")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("rsAPIElevador.DataSchema.EV_RepTecnico", null)
+                    b.HasOne("API.DataSchema.EV_RepTecnico", null)
                         .WithMany()
                         .HasForeignKey("EV_RepTecnicoIdRepTecnico")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Conservadora", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Conservadora", b =>
                 {
-                    b.HasOne("rsAPIElevador.DataSchema.EV_Seguro", "EV_Seguro")
+                    b.HasOne("API.DataSchema.EV_Seguro", "EV_Seguro")
                         .WithMany("EV_Conservadora")
                         .HasForeignKey("IdSeguro");
 
                     b.Navigation("EV_Seguro");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Maquina", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Maquina", b =>
                 {
-                    b.HasOne("rsAPIElevador.DataSchema.EV_Conservadora", "EV_Conservadora")
+                    b.HasOne("API.DataSchema.EV_Conservadora", "EV_Conservadora")
                         .WithMany("EV_Maquina")
                         .HasForeignKey("IdConservadora");
 
-                    b.HasOne("rsAPIElevador.DataSchema.EV_Obra", "EV_Obra")
+                    b.HasOne("API.DataSchema.EV_Obra", "EV_Obra")
                         .WithMany("EV_Maquina")
                         .HasForeignKey("IdObra");
 
-                    b.HasOne("rsAPIElevador.DataSchema.EV_RepTecnico", "EV_RepTecnico")
+                    b.HasOne("API.DataSchema.EV_RepTecnico", "EV_RepTecnico")
                         .WithMany("EV_Maquina")
                         .HasForeignKey("IdRepTecnico");
 
-                    b.HasOne("rsAPIElevador.DataSchema.EV_TipoEquipamiento", "EV_TipoEquipamiento")
+                    b.HasOne("API.DataSchema.EV_TipoEquipamiento", "EV_TipoEquipamiento")
                         .WithMany("EV_Maquina")
                         .HasForeignKey("IdTipoEquipamiento");
 
-                    b.HasOne("rsAPIElevador.DataSchema.EV_Velocidades", "EV_Velocidades")
+                    b.HasOne("API.DataSchema.EV_Velocidades", "EV_Velocidades")
                         .WithMany("EV_Maquina")
                         .HasForeignKey("IdVelocidad");
 
@@ -585,13 +585,13 @@ namespace rsAPIElevador.Migrations
                     b.Navigation("EV_Velocidades");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Obra", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Obra", b =>
                 {
-                    b.HasOne("rsAPIElevador.DataSchema.EV_Administracion", "EV_Administracion")
+                    b.HasOne("API.DataSchema.EV_Administracion", "EV_Administracion")
                         .WithMany("EV_Obra")
                         .HasForeignKey("IdAdministracion");
 
-                    b.HasOne("rsAPIElevador.DataSchema.EV_TipoObra", "EV_TipoObra")
+                    b.HasOne("API.DataSchema.EV_TipoObra", "EV_TipoObra")
                         .WithMany("EV_Obra")
                         .HasForeignKey("IdTipoObra");
 
@@ -600,42 +600,42 @@ namespace rsAPIElevador.Migrations
                     b.Navigation("EV_TipoObra");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Administracion", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Administracion", b =>
                 {
                     b.Navigation("EV_Obra");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Conservadora", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Conservadora", b =>
                 {
                     b.Navigation("EV_Maquina");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Obra", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Obra", b =>
                 {
                     b.Navigation("EV_Maquina");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_RepTecnico", b =>
+            modelBuilder.Entity("API.DataSchema.EV_RepTecnico", b =>
                 {
                     b.Navigation("EV_Maquina");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Seguro", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Seguro", b =>
                 {
                     b.Navigation("EV_Conservadora");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_TipoEquipamiento", b =>
+            modelBuilder.Entity("API.DataSchema.EV_TipoEquipamiento", b =>
                 {
                     b.Navigation("EV_Maquina");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_TipoObra", b =>
+            modelBuilder.Entity("API.DataSchema.EV_TipoObra", b =>
                 {
                     b.Navigation("EV_Obra");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Velocidades", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Velocidades", b =>
                 {
                     b.Navigation("EV_Maquina");
                 });

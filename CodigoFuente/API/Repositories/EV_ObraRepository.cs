@@ -1,11 +1,11 @@
 ﻿using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
-using rsAPIElevador.DataSchema;
+using API.DataSchema;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace rsAPIElevador.Repositories
+namespace API.Repositories
 {
     public class EV_ObraRepository : BaseRepository<EV_Obra>, IEV_ObraRepository
     {

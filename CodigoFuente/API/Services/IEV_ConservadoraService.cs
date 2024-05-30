@@ -1,8 +1,8 @@
-﻿using rsAPIElevador.DataSchema;
+﻿using API.DataSchema;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace rsAPIElevador.Services
+namespace API.Services
 {
     public interface IEV_ConservadoraService : ICRUDService<EV_Conservadora>
     {

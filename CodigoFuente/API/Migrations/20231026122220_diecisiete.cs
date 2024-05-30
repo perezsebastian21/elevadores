@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace rsAPIElevador.Migrations
+namespace API.Migrations
 {
     /// <inheritdoc />
     public partial class diecisiete : Migration

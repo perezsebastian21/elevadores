@@ -3,9 +3,9 @@ using System;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using rsAPIElevador.DataSchema;
+using API.DataSchema;
 
-namespace rsAPIElevador.Repositories
+namespace API.Repositories
 {
     public interface IEV_ObraRepository : IRepository<EV_Obra> 
     {

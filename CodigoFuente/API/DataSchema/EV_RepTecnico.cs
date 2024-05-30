@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 
 
-namespace rsAPIElevador.DataSchema {
+namespace API.DataSchema {
 	public class EV_RepTecnico {
 
         public int IdRepTecnico { get; set; }

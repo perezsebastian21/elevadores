@@ -13,7 +13,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-namespace rsAPIElevador.DataSchema
+namespace API.DataSchema
 {
 	public class EV_Seguro
 	{

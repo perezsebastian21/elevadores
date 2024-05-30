@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace rsAPIElevador.DataSchema
+namespace API.DataSchema
 {
     public class UserInfo
     {

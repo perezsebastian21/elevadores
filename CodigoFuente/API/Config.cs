@@ -10,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 using System.Net;
 
-namespace rsAPIElevador
+namespace API
 {
     public static class Config
     {

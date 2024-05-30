@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic;
 using Newtonsoft.Json;
-using rsAPIElevador.DataSchema;
-using rsAPIElevador.Repositories;
+using API.DataSchema;
+using API.Repositories;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;

@@ -1,7 +1,7 @@
-using  rsAPIElevador.DataSchema;
-using  rsAPIElevador.Repositories;
-using  rsAPIElevador.Services;
-using  rsAPIElevador.Utility;
+using  API.DataSchema;
+using  API.Repositories;
+using  API.Services;
+using  API.Utility;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -19,7 +19,7 @@ using API.Repositories;
 using FluentAssertions.Common;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Identity;
-using rsAPIElevador;
+using API;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);

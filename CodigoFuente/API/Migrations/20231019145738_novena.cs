@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace rsAPIElevador.Migrations
+namespace API.Migrations
 {
     /// <inheritdoc />
     public partial class novena : Migration

@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using rsAPIElevador.DataSchema;
+using API.DataSchema;
 
 #nullable disable
 
-namespace rsAPIElevador.Migrations
+namespace API.Migrations
 {
     [DbContext(typeof(DataContext))]
     [Migration("20231017174800_sexta")]
@@ -25,7 +25,7 @@ namespace rsAPIElevador.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EJ_Usuario", b =>
+            modelBuilder.Entity("API.DataSchema.EJ_Usuario", b =>
                 {
                     b.Property<int>("IdUsuario")
                         .ValueGeneratedOnAdd()
@@ -48,7 +48,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EJ_Usuarios");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Administracion", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Administracion", b =>
                 {
                     b.Property<int>("IdAdministracion")
                         .ValueGeneratedOnAdd()
@@ -88,7 +88,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_Administracion");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_RepTecnico", b =>
+            modelBuilder.Entity("API.DataSchema.EV_RepTecnico", b =>
                 {
                     b.Property<int>("IdRepTecnico")
                         .ValueGeneratedOnAdd()
@@ -140,7 +140,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_RepTecnico");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Seguro", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Seguro", b =>
                 {
                     b.Property<int>("IdSeguro")
                         .ValueGeneratedOnAdd()
@@ -170,7 +170,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_Seguro");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_TipoEquipamiento", b =>
+            modelBuilder.Entity("API.DataSchema.EV_TipoEquipamiento", b =>
                 {
                     b.Property<int>("IdTipoEquipamiento")
                         .ValueGeneratedOnAdd()
@@ -190,7 +190,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_TipoEquipamiento");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_TipoObra", b =>
+            modelBuilder.Entity("API.DataSchema.EV_TipoObra", b =>
                 {
                     b.Property<int>("IdTipoObra")
                         .ValueGeneratedOnAdd()
@@ -210,7 +210,7 @@ namespace rsAPIElevador.Migrations
                     b.ToTable("EV_TipoObra");
                 });
 
-            modelBuilder.Entity("rsAPIElevador.DataSchema.EV_Velocidades", b =>
+            modelBuilder.Entity("API.DataSchema.EV_Velocidades", b =>
                 {
                     b.Property<int>("IdVelocidad")
                         .ValueGeneratedOnAdd()

@@ -1,10 +1,10 @@
-﻿using rsAPIElevador.DataSchema;
-using rsAPIElevador.Repositories;
+﻿using API.DataSchema;
+using API.Repositories;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace rsAPIElevador.Services
+namespace API.Services
 {
     public class EV_ConservadoraService : BaseCRUDService<EV_Conservadora>, IEV_ConservadoraService
     {

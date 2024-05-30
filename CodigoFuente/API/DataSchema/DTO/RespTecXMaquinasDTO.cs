@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace rsAPIElevador.DataSchema.DTO
+namespace API.DataSchema.DTO
 {
     public class RespTecXMaquinasDTO
     {

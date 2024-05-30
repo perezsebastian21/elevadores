@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace rsAPIElevador.Repositories
+namespace API.Repositories
 {
     public interface IRepository<T> :IDisposable where T : class
     {

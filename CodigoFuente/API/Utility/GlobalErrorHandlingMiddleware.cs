@@ -9,7 +9,7 @@ using KeyNotFoundException = rsFoodtrucks.Exceptions.KeyNotFoundException;
 using NotImplementedException = rsFoodtrucks.Exceptions.NotImplementedException;
 using UnauthorizedAccessException = rsFoodtrucks.Exceptions.UnauthorizedAccessException;
 
-namespace rsAPIElevador.Utility
+namespace API.Utility
 {
     public class GlobalErrorHandlingMiddleware
     {
