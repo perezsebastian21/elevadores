@@ -18,6 +18,7 @@ import DataTable from "examples/Tables/DataTable";
 function UsuarioListados() {
   const navigate = useNavigate();
   const [dataTableData, setDataTableData] = useState();
+  const token = sessionStorage.getItem("token");
   const handleDelete = (rowData) => {
     const id = rowData.idUsuario;
     axios
@@ -31,7 +32,11 @@ function UsuarioListados() {
   };
   useEffect(() => {
     axios
-      .get(process.env.REACT_APP_API_URL + "Usuarios/GetAll")
+      .get(process.env.REACT_APP_API_URL + "Usuarios/GetAll", {
+        headers: {
+          Authorization: `Bearer ${token}`, // Envía el token en los headers
+        },
+      })
       .then((response) => setDataTableData(response.data))
       .catch((error) => console.error("Error al obtener los datos:", error));
   }, []);

@@ -316,7 +316,7 @@ export default function App() {
           <Sidenav
             color={sidenavColor}
             brandName="Elevadores"
-            brand="https://www.mardelplata.gob.ar/sites/all/themes/mgp/ico/favicon.ico"
+            brand="favicon.ico"
             routes={routes}
             onMouseEnter={handleOnMouseEnter}
             onMouseLeave={handleOnMouseLeave}

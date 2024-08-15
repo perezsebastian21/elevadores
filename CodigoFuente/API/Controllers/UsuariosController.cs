@@ -23,7 +23,7 @@ namespace API.Controllers
             _context = context;
             _serviceGenerico = serviceGenerico;
         }
-        
+    
         [HttpGet("GetAll")]
         public async Task<ActionResult<IEnumerable<EJ_Usuario>>> Get() //TODO: el método no contiene await, ya que devuelve un IEnumerable, que no puede ser awaiteado, ver como se puede implementar
         {
