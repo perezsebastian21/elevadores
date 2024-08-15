@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64919092-b341-4f4d-a1b1-be804d307678}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include=".env" />
+    <Content Include=".eslintignore" />
+    <Content Include="Dockerfile" />
+    <Content Include="documentation\assets\img\cover.jpeg" />
+    <Content Include="documentation\assets\img\header-doc.jpeg" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="src\actions\authActions.js" />
+    <Content Include="src\actions\types.js" />
+    <Content Include="src\App.js" />
+    <Content Include="src\assets\css\material-dashboard-pro-react.css" />
+    <Content Include="src\assets\css\material-dashboard-pro-react.css.map" />
+    <Content Include="src\assets\css\material-dashboard-pro-react.min.css" />
+    <Content Include="src\assets\github\material-dashboard-pro-react.gif" />
+    <Content Include="src\assets\img\apple-icon.png" />
+    <Content Include="src\assets\img\bg-pricing.jpeg" />
+    <Content Include="src\assets\img\card-1.jpeg" />
+    <Content Include="src\assets\img\card-2.jpeg" />
+    <Content Include="src\assets\img\card-3.jpeg" />
+    <Content Include="src\assets\img\clint-mckoy.jpg" />
+    <Content Include="src\assets\img\default-avatar.png" />
+    <Content Include="src\assets\img\faces\avatar.jpg" />
+    <Content Include="src\assets\img\faces\card-profile1-square.jpg" />
+    <Content Include="src\assets\img\faces\card-profile2-square.jpg" />
+    <Content Include="src\assets\img\faces\marc.jpg" />
+    <Content Include="src\assets\img\favicon.png" />
+    <Content Include="src\assets\img\flags\AD.png" />
+    <Content Include="src\assets\img\flags\AE.png" />
+    <Content Include="src\assets\img\flags\AG.png" />
+    <Content Include="src\assets\img\flags\AM.png" />
+    <Content Include="src\assets\img\flags\AR.png" />
+    <Content Include="src\assets\img\flags\AT.png" />
+    <Content Include="src\assets\img\flags\AU.png" />
+    <Content Include="src\assets\img\flags\BE.png" />
+    <Content Include="src\assets\img\flags\BF.png" />
+    <Content Include="src\assets\img\flags\BG.png" />
+    <Content Include="src\assets\img\flags\BO.png" />
+    <Content Include="src\assets\img\flags\BR.png" />
+    <Content Include="src\assets\img\flags\CA.png" />
+    <Content Include="src\assets\img\flags\CD.png" />
+    <Content Include="src\assets\img\flags\CG.png" />
+    <Content Include="src\assets\img\flags\CH.png" />
+    <Content Include="src\assets\img\flags\CL.png" />
+    <Content Include="src\assets\img\flags\CM.png" />
+    <Content Include="src\assets\img\flags\CN.png" />
+    <Content Include="src\assets\img\flags\CO.png" />
+    <Content Include="src\assets\img\flags\CZ.png" />
+    <Content Include="src\assets\img\flags\DE.png" />
+    <Content Include="src\assets\img\flags\DJ.png" />
+    <Content Include="src\assets\img\flags\DK.png" />
+    <Content Include="src\assets\img\flags\DZ.png" />
+    <Content Include="src\assets\img\flags\EE.png" />
+    <Content Include="src\assets\img\flags\EG.png" />
+    <Content Include="src\assets\img\flags\ES.png" />
+    <Content Include="src\assets\img\flags\FI.png" />
+    <Content Include="src\assets\img\flags\FR.png" />
+    <Content Include="src\assets\img\flags\GA.png" />
+    <Content Include="src\assets\img\flags\GB.png" />
+    <Content Include="src\assets\img\flags\GM.png" />
+    <Content Include="src\assets\img\flags\GT.png" />
+    <Content Include="src\assets\img\flags\HN.png" />
+    <Content Include="src\assets\img\flags\HT.png" />
+    <Content Include="src\assets\img\flags\HU.png" />
+    <Content Include="src\assets\img\flags\ID.png" />
+    <Content Include="src\assets\img\flags\IE.png" />
+    <Content Include="src\assets\img\flags\IL.png" />
+    <Content Include="src\assets\img\flags\IN.png" />
+    <Content Include="src\assets\img\flags\IQ.png" />
+    <Content Include="src\assets\img\flags\IR.png" />
+    <Content Include="src\assets\img\flags\IT.png" />
+    <Content Include="src\assets\img\flags\JM.png" />
+    <Content Include="src\assets\img\flags\JO.png" />
+    <Content Include="src\assets\img\flags\JP.png" />
+    <Content Include="src\assets\img\flags\KG.png" />
+    <Content Include="src\assets\img\flags\KN.png" />
+    <Content Include="src\assets\img\flags\KP.png" />
+    <Content Include="src\assets\img\flags\KR.png" />
+    <Content Include="src\assets\img\flags\KW.png" />
+    <Content Include="src\assets\img\flags\KZ.png" />
+    <Content Include="src\assets\img\flags\LA.png" />
+    <Content Include="src\assets\img\flags\LB.png" />
+    <Content Include="src\assets\img\flags\LC.png" />
+    <Content Include="src\assets\img\flags\LS.png" />
+    <Content Include="src\assets\img\flags\LU.png" />
+    <Content Include="src\assets\img\flags\LV.png" />
+    <Content Include="src\assets\img\flags\MG.png" />
+    <Content Include="src\assets\img\flags\MK.png" />
+    <Content Include="src\assets\img\flags\ML.png" />
+    <Content Include="src\assets\img\flags\MM.png" />
+    <Content Include="src\assets\img\flags\MT.png" />
+    <Content Include="src\assets\img\flags\MX.png" />
+    <Content Include="src\assets\img\flags\NA.png" />
+    <Content Include="src\assets\img\flags\NE.png" />
+    <Content Include="src\assets\img\flags\NG.png" />
+    <Content Include="src\assets\img\flags\NI.png" />
+    <Content Include="src\assets\img\flags\NL.png" />
+    <Content Include="src\assets\img\flags\NO.png" />
+    <Content Include="src\assets\img\flags\OM.png" />
+    <Content Include="src\assets\img\flags\PA.png" />
+    <Content Include="src\assets\img\flags\PE.png" />
+    <Content Include="src\assets\img\flags\PG.png" />
+    <Content Include="src\assets\img\flags\PK.png" />
+    <Content Include="src\assets\img\flags\PL.png" />
+    <Content Include="src\assets\img\flags\PT.png" />
+    <Content Include="src\assets\img\flags\PY.png" />
+    <Content Include="src\assets\img\flags\QA.png" />
+    <Content Include="src\assets\img\flags\RO.png" />
+    <Content Include="src\assets\img\flags\RU.png" />
+    <Content Include="src\assets\img\flags\RW.png" />
+    <Content Include="src\assets\img\flags\SA.png" />
+    <Content Include="src\assets\img\flags\SE.png" />
+    <Content Include="src\assets\img\flags\SG.png" />
+    <Content Include="src\assets\img\flags\SL.png" />
+    <Content Include="src\assets\img\flags\SN.png" />
+    <Content Include="src\assets\img\flags\SO.png" />
+    <Content Include="src\assets\img\flags\SV.png" />
+    <Content Include="src\assets\img\flags\TD.png" />
+    <Content Include="src\assets\img\flags\TJ.png" />
+    <Content Include="src\assets\img\flags\TL.png" />
+    <Content Include="src\assets\img\flags\TR.png" />
+    <Content Include="src\assets\img\flags\TZ.png" />
+    <Content Include="src\assets\img\flags\UA.png" />
+    <Content Include="src\assets\img\flags\US.png" />
+    <Content Include="src\assets\img\flags\VE.png" />
+    <Content Include="src\assets\img\flags\VN.png" />
+    <Content Include="src\assets\img\flags\YE.png" />
+    <Content Include="src\assets\img\header-doc.jpeg" />
+    <Content Include="src\assets\img\image_placeholder.jpg" />
+    <Content Include="src\assets\img\lock.jpeg" />
+    <Content Include="src\assets\img\login.jpeg" />
+    <Content Include="src\assets\img\logo-white.svg" />
+    <Content Include="src\assets\img\logo.svg" />
+    <Content Include="src\assets\img\mask.png" />
+    <Content Include="src\assets\img\new_logo.png" />
+    <Content Include="src\assets\img\placeholder.jpg" />
+    <Content Include="src\assets\img\product1.jpg" />
+    <Content Include="src\assets\img\product2.jpg" />
+    <Content Include="src\assets\img\product3.jpg" />
+    <Content Include="src\assets\img\register.jpeg" />
+    <Content Include="src\assets\img\sidebar-1.jpg" />
+    <Content Include="src\assets\img\sidebar-2.jpg" />
+    <Content Include="src\assets\img\sidebar-3.jpg" />
+    <Content Include="src\assets\img\sidebar-4.jpg" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\buttonGroupStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\cardImagesStyles.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\accordionStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\adminNavbarLinksStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\adminNavbarStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\authNavbarStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\badgeStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\buttonStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\cardAvatarStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\cardBodyStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\cardFooterStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\cardHeaderStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\cardIconStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\cardStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\cardTextStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\customDropdownStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\customInputStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\customLinearProgressStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\customTabsStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\footerStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\headingStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\infoStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\instructionStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\navPillsStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\paginationStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\sidebarStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\snackbarContentStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\tableStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\tasksStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\timelineStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\typographyStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\components\wizardStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\customCheckboxRadioSwitch.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\customSelectStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\hoverCardStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\layouts\adminStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\layouts\authStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\layouts\rtlStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\modalStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\buttonsStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\chartsStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\dashboardStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\errorPageStyles.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\extendedFormsStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\extendedTablesStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\gridSystemStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\iconsStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\lockScreenPageStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\loginPageStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\notificationsStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\pricingPageStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\registerPageStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\regularFormsStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\sweetAlertStyle.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\userProfileStyles.js" />
+    <Content Include="src\assets\jss\material-dashboard-pro-react\views\validationFormsStyle.js" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\mixins\_chartist.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\mixins\_sidebar-color.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\mixins\_transparency.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\mixins\_vendor-prefixes.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\plugins\_plugin-nouislider.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\plugins\_plugin-perfect-scrollbar.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\plugins\_plugin-react-big-calendar.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\plugins\_plugin-react-bootstrap-sweetalert.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\plugins\_plugin-react-chartist.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\plugins\_plugin-react-datetime.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\plugins\_plugin-react-jvectormap.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\plugins\_plugin-react-table.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\plugins\_plugin-react-tagsinput.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\_colors.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\_fileupload.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\_fixed-plugin.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\_misc.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\_mixins.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\_shadows.scss" />
+    <Content Include="src\assets\scss\material-dashboard-pro-react\_variables.scss" />
+    <Content Include="src\components\Accordion\Accordion.js" />
+    <Content Include="src\components\Badge\Badge.js" />
+    <Content Include="src\components\Card\Card.js" />
+    <Content Include="src\components\Card\CardAvatar.js" />
+    <Content Include="src\components\Card\CardBody.js" />
+    <Content Include="src\components\Card\CardFooter.js" />
+    <Content Include="src\components\Card\CardHeader.js" />
+    <Content Include="src\components\Card\CardIcon.js" />
+    <Content Include="src\components\Card\CardText.js" />
+    <Content Include="src\components\Clearfix\Clearfix.js" />
+    <Content Include="src\components\CustomButtons\Button.js" />
+    <Content Include="src\components\CustomDropdown\CustomDropdown.js" />
+    <Content Include="src\components\CustomInput\CustomInput.js" />
+    <Content Include="src\components\CustomLinearProgress\CustomLinearProgress.js" />
+    <Content Include="src\components\CustomTabs\CustomTabs.js" />
+    <Content Include="src\components\CustomUpload\ImageUpload.js" />
+    <Content Include="src\components\CustomUpload\PictureUpload.js" />
+    <Content Include="src\components\FixedPlugin\FixedPlugin.js" />
+    <Content Include="src\components\Footer\Footer.js" />
+    <Content Include="src\components\Grid\GridContainer.js" />
+    <Content Include="src\components\Grid\GridItem.js" />
+    <Content Include="src\components\Heading\Heading.js" />
+    <Content Include="src\components\InfoArea\InfoArea.js" />
+    <Content Include="src\components\Instruction\Instruction.js" />
+    <Content Include="src\components\Navbars\AdminNavbar.js" />
+    <Content Include="src\components\Navbars\AdminNavbarLinks.js" />
+    <Content Include="src\components\Navbars\AuthNavbar.js" />
+    <Content Include="src\components\NavPills\NavPills.js" />
+    <Content Include="src\components\Pagination\Pagination.js" />
+    <Content Include="src\components\ReactTable\ReactTable.js" />
+    <Content Include="src\components\Sidebar\Sidebar.js" />
+    <Content Include="src\components\Snackbar\Snackbar.js" />
+    <Content Include="src\components\Snackbar\SnackbarContent.js" />
+    <Content Include="src\components\Table\Table.js" />
+    <Content Include="src\components\Tasks\Tasks.js" />
+    <Content Include="src\components\Timeline\Timeline.js" />
+    <Content Include="src\components\Typography\Danger.js" />
+    <Content Include="src\components\Typography\Info.js" />
+    <Content Include="src\components\Typography\Muted.js" />
+    <Content Include="src\components\Typography\Primary.js" />
+    <Content Include="src\components\Typography\Quote.js" />
+    <Content Include="src\components\Typography\Success.js" />
+    <Content Include="src\components\Typography\Warning.js" />
+    <Content Include="src\components\Wizard\Wizard.js" />
+    <Content Include="src\index.js" />
+    <Content Include="src\layouts\Admin.js" />
+    <Content Include="src\layouts\Auth.js" />
+    <Content Include="src\layouts\RTL.js" />
+    <Content Include="src\reducers\authReducer.js" />
+    <Content Include="src\reducers\index.js" />
+    <Content Include="src\routes.js" />
+    <Content Include="src\services\oauth.js" />
+    <Content Include="src\store.js" />
+    <Content Include="src\utils\authProvider.js" />
+    <Content Include="src\utils\axiosHeaders.js" />
+    <Content Include="src\utils\protectedRoute.js" />
+    <Content Include="src\variables\charts.js" />
+    <Content Include="src\variables\general.js" />
+    <Content Include="src\views\Calendar\Calendar.js" />
+    <Content Include="src\views\Charts\Charts.js" />
+    <Content Include="src\views\Components\Buttons.js" />
+    <Content Include="src\views\Components\GridSystem.js" />
+    <Content Include="src\views\Components\Icons.js" />
+    <Content Include="src\views\Components\Notifications.js" />
+    <Content Include="src\views\Components\Panels.js" />
+    <Content Include="src\views\Components\SweetAlert.js" />
+    <Content Include="src\views\Components\Typography.js" />
+    <Content Include="src\views\Dashboard\Dashboard.js" />
+    <Content Include="src\views\Forms\ExtendedForms.js" />
+    <Content Include="src\views\Forms\RegularForms.js" />
+    <Content Include="src\views\Forms\ValidationForms.js" />
+    <Content Include="src\views\Forms\Wizard.js" />
+    <Content Include="src\views\Forms\WizardSteps\Step1.js" />
+    <Content Include="src\views\Forms\WizardSteps\Step2.js" />
+    <Content Include="src\views\Forms\WizardSteps\Step3.js" />
+    <Content Include="src\views\Maps\FullScreenMap.js" />
+    <Content Include="src\views\Maps\GoogleMaps.js" />
+    <Content Include="src\views\Maps\VectorMap.js" />
+    <Content Include="src\views\Notifications\Notifications.js" />
+    <Content Include="src\views\Pages\ErrorPage.js" />
+    <Content Include="src\views\Pages\LockScreenPage.js" />
+    <Content Include="src\views\Pages\LoginPage.js" />
+    <Content Include="src\views\Pages\PricingPage.js" />
+    <Content Include="src\views\Pages\RegisterPage.js" />
+    <Content Include="src\views\Pages\RTLSupport.js" />
+    <Content Include="src\views\Pages\Timeline.js" />
+    <Content Include="src\views\Pages\UserProfile.js" />
+    <Content Include="src\views\Post\Post.js" />
+    <Content Include="src\views\Post\Posts.js" />
+    <Content Include="src\views\Tables\ExtendedTables.js" />
+    <Content Include="src\views\Tables\ReactTables.js" />
+    <Content Include="src\views\Tables\RegularTables.js" />
+    <Content Include="src\views\UserProfile\RegisterPage.js" />
+    <Content Include="src\views\UserProfile\UserProfile.js" />
+    <Content Include="src\views\Users\user.js" />
+    <Content Include="src\views\Users\users.js" />
+    <Content Include="src\views\Widgets\Widgets.js" />
+    <None Include="jsconfig.json" />
+    <Content Include="package.json" />
+    <Content Include="CHANGELOG.md" />
+    <Content Include="ISSUE_TEMPLATE.md" />
+    <Content Include=".eslintrc.js" />
+    <Content Include="gulpfile.js" />
+    <Content Include="documentation\tutorial-components.html" />
+    <Content Include="public\index.html" />
+    <Content Include="public\apple-icon.png" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\manifest.json" />
+    <Content Include="src\index.js" />
+    <Content Include="src\routes.js" />
+    <Content Include="documentation\assets\css\bootstrap.min.css" />
+    <Content Include="documentation\assets\css\demo-documentation.css" />
+    <Content Include="documentation\assets\css\material-dashboard.css" />
+    <Content Include="documentation\assets\img\apple-icon.png" />
+    <Content Include="documentation\assets\img\favicon.png" />
+    <Content Include="documentation\assets\img\mask.png" />
+    <Content Include="documentation\assets\img\new_logo.png" />
+    <Content Include="documentation\assets\img\reactlogo.png" />
+    <Content Include="documentation\assets\img\tim_80x80.png" />
+    <Content Include="documentation\assets\img\sidebar-1.jpg" />
+    <Content Include="documentation\assets\img\sidebar-2.jpg" />
+    <Content Include="documentation\assets\img\sidebar-3.jpg" />
+    <Content Include="documentation\assets\img\sidebar-4.jpg" />
+    <Content Include="documentation\assets\js\bootstrap.min.js" />
+    <Content Include="documentation\assets\js\jquery-3.2.1.min.js" />
+    <Content Include="documentation\assets\img\faces\marc.jpg" />
+    <Content Include="src\layouts\Admin.js" />
+    <Content Include="src\layouts\RTL.js" />
+    <Content Include="src\variables\charts.js" />
+    <Content Include="src\variables\general.js" />
+    <Content Include="src\assets\css\material-dashboard-react.css" />
+    <Content Include="src\assets\github\angular.png" />
+    <Content Include="src\assets\github\chrome.png" />
+    <Content Include="src\assets\github\edge.png" />
+    <Content Include="src\assets\github\firefox.png" />
+    <Content Include="src\assets\github\html.png" />
+    <Content Include="src\assets\github\opera.png" />
+    <Content Include="src\assets\github\safari.png" />
+    <Content Include="src\assets\github\vuejs.png" />
+    <Content Include="src\assets\github\dashboard.jpg" />
+    <Content Include="src\assets\github\map.jpg" />
+    <Content Include="src\assets\github\notifications.jpg" />
+    <Content Include="src\assets\github\opt_mdr_thumbnail.jpg" />
+    <Content Include="src\assets\github\opt_md_angular_thumbnail.jpg" />
+    <Content Include="src\assets\github\opt_md_thumbnail.jpg" />
+    <Content Include="src\assets\github\opt_md_vue_thumbnail.jpg" />
+    <Content Include="src\assets\github\tables.jpg" />
+    <Content Include="src\assets\github\userprofile.jpg" />
+    <Content Include="src\assets\github\md-react.gif" />
+    <Content Include="src\assets\github\react.svg" />
+    <Content Include="src\assets\img\apple-icon.png" />
+    <Content Include="src\assets\img\favicon.png" />
+    <Content Include="src\assets\img\mask.png" />
+    <Content Include="src\assets\img\new_logo.png" />
+    <Content Include="src\assets\img\reactlogo.png" />
+    <Content Include="src\assets\img\tim_80x80.png" />
+    <Content Include="src\assets\img\sidebar-1.jpg" />
+    <Content Include="src\assets\img\sidebar-2.jpg" />
+    <Content Include="src\assets\img\sidebar-3.jpg" />
+    <Content Include="src\assets\img\sidebar-4.jpg" />
+    <Content Include="src\assets\img\faces\marc.jpg" />
+    <Content Include="src\components\Card\Card.js" />
+    <Content Include="src\components\Card\CardAvatar.js" />
+    <Content Include="src\components\Card\CardBody.js" />
+    <Content Include="src\components\Card\CardFooter.js" />
+    <Content Include="src\components\Card\CardHeader.js" />
+    <Content Include="src\components\Card\CardIcon.js" />
+    <Content Include="src\components\CustomButtons\Button.js" />
+    <Content Include="src\components\CustomInput\CustomInput.js" />
+    <Content Include="src\components\CustomTabs\CustomTabs.js" />
+    <Content Include="src\components\FixedPlugin\FixedPlugin.js" />
+    <Content Include="src\components\Footer\Footer.js" />
+    <Content Include="src\components\Grid\GridContainer.js" />
+    <Content Include="src\components\Grid\GridItem.js" />
+    <Content Include="src\components\Navbars\AdminNavbarLinks.js" />
+    <Content Include="src\components\Sidebar\Sidebar.js" />
+    <Content Include="src\components\Snackbar\Snackbar.js" />
+    <Content Include="src\components\Snackbar\SnackbarContent.js" />
+    <Content Include="src\components\Table\Table.js" />
+    <Content Include="src\components\Tasks\Tasks.js" />
+    <Content Include="src\components\Typography\Danger.js" />
+    <Content Include="src\components\Typography\Info.js" />
+    <Content Include="src\components\Typography\Muted.js" />
+    <Content Include="src\components\Typography\Primary.js" />
+    <Content Include="src\components\Typography\Quote.js" />
+    <Content Include="src\components\Typography\Success.js" />
+    <Content Include="src\components\Typography\Warning.js" />
+    <Content Include="src\views\Dashboard\Dashboard.js" />
+    <Content Include="src\views\Notifications\Notifications.js" />
+    <Content Include="src\views\UserProfile\UserProfile.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="documentation" />
+    <Folder Include="documentation\assets" />
+    <Folder Include="documentation\assets\css" />
+    <Folder Include="documentation\assets\img" />
+    <Folder Include="documentation\assets\img\faces" />
+    <Folder Include="documentation\assets\js" />
+    <Folder Include="public" />
+    <Folder Include="src" />
+    <Folder Include="src\assets" />
+    <Folder Include="src\assets\css" />
+    <Folder Include="src\assets\github" />
+    <Folder Include="src\assets\img" />
+    <Folder Include="src\assets\img\faces" />
+    <Folder Include="src\assets\img\flags\" />
+    <Folder Include="src\assets\jss" />
+    <Folder Include="src\assets\jss\material-dashboard-pro-react\" />
+    <Folder Include="src\assets\jss\material-dashboard-pro-react\components\" />
+    <Folder Include="src\assets\jss\material-dashboard-pro-react\layouts\" />
+    <Folder Include="src\assets\jss\material-dashboard-pro-react\views\" />
+    <Folder Include="src\assets\scss\" />
+    <Folder Include="src\assets\scss\material-dashboard-pro-react\" />
+    <Folder Include="src\assets\scss\material-dashboard-pro-react\mixins\" />
+    <Folder Include="src\assets\scss\material-dashboard-pro-react\plugins\" />
+    <Folder Include="src\components" />
+    <Folder Include="src\components\Accordion\" />
+    <Folder Include="src\components\Badge\" />
+    <Folder Include="src\components\Card" />
+    <Folder Include="src\components\Clearfix\" />
+    <Folder Include="src\components\CustomButtons" />
+    <Folder Include="src\components\CustomDropdown\" />
+    <Folder Include="src\components\CustomInput" />
+    <Folder Include="src\components\CustomLinearProgress\" />
+    <Folder Include="src\components\CustomTabs" />
+    <Folder Include="src\components\CustomUpload\" />
+    <Folder Include="src\components\FixedPlugin" />
+    <Folder Include="src\components\Footer" />
+    <Folder Include="src\components\Grid" />
+    <Folder Include="src\components\Heading\" />
+    <Folder Include="src\components\InfoArea\" />
+    <Folder Include="src\components\Instruction\" />
+    <Folder Include="src\components\Navbars" />
+    <Folder Include="src\components\NavPills\" />
+    <Folder Include="src\components\Pagination\" />
+    <Folder Include="src\components\ReactTable\" />
+    <Folder Include="src\components\Sidebar" />
+    <Folder Include="src\components\Snackbar" />
+    <Folder Include="src\components\Table" />
+    <Folder Include="src\components\Tasks" />
+    <Folder Include="src\components\Timeline\" />
+    <Folder Include="src\components\Typography" />
+    <Folder Include="src\components\Wizard\" />
+    <Folder Include="src\layouts" />
+    <Folder Include="src\actions\" />
+    <Folder Include="src\reducers\" />
+    <Folder Include="src\utils\" />
+    <Folder Include="src\services\" />
+    <Folder Include="src\variables" />
+    <Folder Include="src\views" />
+    <Folder Include="src\views\Calendar\" />
+    <Folder Include="src\views\Charts\" />
+    <Folder Include="src\views\Components\" />
+    <Folder Include="src\views\Dashboard" />
+    <Folder Include="src\views\Forms\" />
+    <Folder Include="src\views\Forms\WizardSteps\" />
+    <Folder Include="src\views\Maps" />
+    <Folder Include="src\views\Users\" />
+    <Folder Include="src\views\Post\" />
+    <Folder Include="src\views\Notifications" />
+    <Folder Include="src\views\Pages\" />
+    <Folder Include="src\views\Tables\" />
+    <Folder Include="src\views\UserProfile" />
+    <Folder Include="src\" />
+    <Folder Include="src\assets\" />
+    <Folder Include="src\assets\css\" />
+    <Folder Include="src\assets\github\" />
+    <Folder Include="src\assets\img\" />
+    <Folder Include="src\assets\img\faces\" />
+    <Folder Include="src\assets\jss\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\components\Card\" />
+    <Folder Include="src\components\CustomButtons\" />
+    <Folder Include="src\components\CustomInput\" />
+    <Folder Include="src\components\CustomTabs\" />
+    <Folder Include="src\components\FixedPlugin\" />
+    <Folder Include="src\components\Footer\" />
+    <Folder Include="src\components\Grid\" />
+    <Folder Include="src\components\Navbars\" />
+    <Folder Include="src\components\Sidebar\" />
+    <Folder Include="src\components\Snackbar\" />
+    <Folder Include="src\components\Table\" />
+    <Folder Include="src\components\Tasks\" />
+    <Folder Include="src\components\Typography\" />
+    <Folder Include="src\layouts\" />
+    <Folder Include="src\variables\" />
+    <Folder Include="src\views\" />
+    <Folder Include="src\views\Dashboard\" />
+    <Folder Include="src\views\Maps\" />
+    <Folder Include="src\views\Notifications\" />
+    <Folder Include="src\views\UserProfile\" />
+    <Folder Include="src\views\Widgets\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
